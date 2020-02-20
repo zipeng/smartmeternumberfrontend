@@ -1,0 +1,13 @@
+<div fxLayout="column" fxLayoutAlign="start center">
+	<mat-form-field>
+		<input ng-minlength="14" 
+       ng-maxlength="14"  matInput (keydown.enter)="applyFilter($event)" placeholder="WrongNumber" name="search" [(ngModel)]="searchValue">
+		<button mat-icon-button matSuffix aria-label="Clear" >
+    <mat-icon>close</mat-icon>
+  </button>
+	</mat-form-field>
+  <p>
+    Search Value: <b>{{ searchValue }}</b>
+  </p>
+
+</div>
